@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model</title>
+  <link rel="stylesheet" href="CssDeTodos.css">
+  <style>
+    /* Estilos específicos para o exemplo do Box Model */
+    .box-model-exemplo {
+      width: 300px;
+      padding: 20px;
+      border: 5px solid #4CAF50;
+      margin: 15px;
+      background-color: #f0f8ff;
+    }
+    
+    /* Para visualizar cada camada */
+    .box-model-exemplo p {
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    
+    /* Estilos para o exemplo escrito */
+    .box-model-descricao {
+      margin: 20px 0;
+      padding: 15px;
+      background-color: #f7f7f7;
+      border-left: 4px solid #4CAF50;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Entendendo o Box Model</h1>
+    <nav>
+      <ul>
+        <li><a href="PrimeiraPerrgunta.html">Início</a></li>
+        <li><a href="SegundaPergunta.html">Estilos em Cascata</a></li>
+        <li><a href="TerceiraPergunta.html">Formatação CSS</a></li>
+        <li><a href="QuartaPergunta.html">Box Model</a></li>
+      </ul>
+    </nav>
+
+    <!-- Barra de Pesquisa -->
+    <form action="#" method="GET" class="search-bar">
+      <input type="text" name="search" placeholder="Buscar no portfólio..." aria-label="Campo de busca">
+      <button type="submit">Pesquisar</button>
+    </form>
+  </header>
+
+  <main>
+    <!-- Seção de Exemplo do Box Model -->
+    <section>
+      <h2>Exemplo de Box Model</h2>
+      <div class="box-model-exemplo">
+        <p>Este box usa margens, padding, bordas e diferentes conteúdos para demonstrar o box model.</p>
+      </div>
+
+      <!-- Descrição do Box Model -->
+      <div class="box-model-descricao">
+        <h3>O que é o Box Model?</h3>
+        <p>O Box Model é um conceito fundamental no CSS que define como os elementos HTML são exibidos em uma página web. Cada elemento é representado como uma caixa retangular, composta por quatro camadas principais:</p>
+        <ul>
+          <li><strong>Content (Conteúdo)</strong>: O conteúdo real do elemento, como texto ou imagem.</li>
+          <li><strong>Padding</strong>: Espaço ao redor do conteúdo, dentro das bordas do elemento. Cria uma área de respiro interna entre o conteúdo e a borda.</li>
+          <li><strong>Border</strong>: Borda ao redor do padding e do conteúdo. Pode ser personalizada em espessura, estilo e cor.</li>
+          <li><strong>Margin (Margem)</strong>: Espaço ao redor da borda, separando o elemento dos outros elementos na página.</li>
+        </ul>
+        <p>Ao ajustar o <strong>Box Model</strong>, podemos controlar o layout e o espaçamento dos elementos na página, tornando o design mais organizado e agradável.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 - Desenvolvido por José e Henzzo </p>
+  </footer>
+
+</body>
+</html>

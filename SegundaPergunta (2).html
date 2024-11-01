@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estilos em Cascata</title>
+  <link rel="stylesheet" href="CssDeTodos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Estilos em Cascata e Especificidade</h1>
+    <nav>
+      <ul>
+        <li><a href="PrimeiraPerrgunta.html">Início</a></li>
+        <li><a href="SegundaPergunta.html">Estilos em Cascata</a></li>
+        <li><a href="TerceiraPergunta.html">Formatação CSS</a></li>
+        <li><a href="QuartaPergunta.html">Box Model</a></li>
+      </ul>
+    </nav>
+  
+    <!-- Barra de Pesquisa -->
+    <form action="#" method="GET" class="search-bar">
+      <input type="text" name="search" placeholder="Buscar no portfólio..." aria-label="Campo de busca">
+      <button type="submit">Pesquisar</button>
+    </form>
+  </header>
+
+  <main>
+    <section>
+      <h2>Entendendo Cascata e Especificidade</h2>
+      <p>O conceito de "cascata" no CSS significa que estilos são aplicados com base na ordem e na especificidade dos seletores. A especificidade define a prioridade dos estilos.</p>
+
+      <h3>Exemplo de Especificidade:</h3>
+      <p>Este parágrafo é estilizado pelo seletor de elemento (`p`).</p>
+      <p class="destaque">Este parágrafo usa a classe `.destaque` para aplicar estilos adicionais.</p>
+      <p id="especial">Este parágrafo usa o ID `#especial`, que possui a maior especificidade.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 - Desenvolvido por José e Henzzo </p>
+  </footer>
+
+</body>
+</html>
